@@ -1,0 +1,80 @@
+[
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bd6479f5dd592790607e0504e66e0f31c2b4d308",
+    "jarFileModificationDate": "2013-05-29T09:02:09.093+08:00",
+    "location": "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.xtend.lib",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 1,
+      "qualifier": "v201208210947"
+    },
+    "jarFileFingerprint": "107c38b90c6490c153365c8920eac3a7c4c1aa75",
+    "jarFileModificationDate": "2013-02-24T23:44:10+08:00",
+    "location": "C:\\Documents and Settings\\Admin\\My Documents\\Downloads\\Compressed\\eclipse\\plugins\\org.eclipse.xtend.lib_2.3.1.v201208210947.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "322db3959c3383f4be9daa75ffa427d1485879ad",
+    "jarFileModificationDate": "2013-02-13T07:33:04+08:00",
+    "location": "E:\\adt-bundle-windows-x86-20130219\\sdk\\platforms\\android-17\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.guava",
+    "version": {
+      "major": 10,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": "v201203051515"
+    },
+    "jarFileFingerprint": "18185bec2c7684ac01f1f5bd26247a7ca5331f79",
+    "jarFileModificationDate": "2013-02-24T23:43:16+08:00",
+    "location": "C:\\Documents and Settings\\Admin\\My Documents\\Downloads\\Compressed\\eclipse\\plugins\\com.google.guava_10.0.1.v201203051515.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.xtext.xbase.lib",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 1,
+      "qualifier": "v201208210947"
+    },
+    "jarFileFingerprint": "92a39e33ffc416f70bab3c059bb930edc9eb0945",
+    "jarFileModificationDate": "2013-02-24T23:44:12+08:00",
+    "location": "C:\\Documents and Settings\\Admin\\My Documents\\Downloads\\Compressed\\eclipse\\plugins\\org.eclipse.xtext.xbase.lib_2.3.1.v201208210947.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "achartengine-1.0.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b2bb0af9f390c0edd4d7d95f613f38da3abe0144",
+    "jarFileModificationDate": "2013-05-28T09:01:33.562+08:00",
+    "location": "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\libs\\achartengine-1.0.0.jar",
+    "javaRuntime": false
+  }
+]

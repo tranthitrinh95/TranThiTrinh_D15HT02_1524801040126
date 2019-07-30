@@ -1,0 +1,47 @@
+{
+  "E:\\adt-bundle-windows-x86-20130219\\sdk\\platforms\\android-17\\android.jar": {
+    "location": "E:\\adt-bundle-windows-x86-20130219\\sdk\\platforms\\android-17\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027E:\\adt-bundle-windows-x86-20130219\\sdk\\platforms\\android-17\\android.jar\u0027. Neither fingerprint \u0027322db3959c3383f4be9daa75ffa427d1485879ad\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\gen": {
+    "location": "D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\gen\u0027. Skipped."
+  },
+  "D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\src": {
+    "location": "D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\src\u0027. Skipped."
+  },
+  "D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\libs\\achartengine-1.0.0.jar": {
+    "location": "D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\libs\\achartengine-1.0.0.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027D:\\Detaitotnghiep_Quanli\\Quanli_taichinh\\libs\\achartengine-1.0.0.jar\u0027. Neither fingerprint \u0027b2bb0af9f390c0edd4d7d95f613f38da3abe0144\u0027 nor symbolic name \u0027achartengine-1.0.0\u0027 are known."
+  },
+  "D:\\Detaitotnghiep_Quanli\\thudemo\\src": {
+    "location": "D:\\Detaitotnghiep_Quanli\\thudemo\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Detaitotnghiep_Quanli\\thudemo\\src\u0027. Skipped."
+  },
+  "D:\\Detaitotnghiep_Quanli\\thudemo\\gen": {
+    "location": "D:\\Detaitotnghiep_Quanli\\thudemo\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Detaitotnghiep_Quanli\\thudemo\\gen\u0027. Skipped."
+  },
+  "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\src": {
+    "location": "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\src\u0027. Skipped."
+  },
+  "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\libs\\achartengine-1.0.0.jar": {
+    "location": "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\libs\\achartengine-1.0.0.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\libs\\achartengine-1.0.0.jar\u0027. Neither fingerprint \u0027b2bb0af9f390c0edd4d7d95f613f38da3abe0144\u0027 nor symbolic name \u0027achartengine-1.0.0\u0027 are known."
+  },
+  "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\gen": {
+    "location": "D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027D:\\Detaitotnghiep_Quanli\\QuanLi_CaNhan\\gen\u0027. Skipped."
+  }
+}

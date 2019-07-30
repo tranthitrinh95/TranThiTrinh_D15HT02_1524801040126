@@ -1,0 +1,115 @@
+package nguyenhuuphu.com;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import Database.DataAdapter;
+import android.view.View.OnClickListener;
+import java.util.Locale;
+import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.SimpleCursorAdapter;
+import android.widget.Spinner;
+import android.widget.TabHost;
+
+public class KhoanChi_acitive extends Activity {
+	
+	private DataAdapter db;
+	private Date dateFinish;
+	Calendar cal;
+	Button bttthemkc,bttdate;
+	EditText editsotien,editdate;
+	Spinner spinten;
+	SimpleCursorAdapter cursordata ;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.khoangchi);
+		
+		bttdate=(Button) findViewById(R.id.btnkc);
+		editdate=(EditText) findViewById(R.id.editdatekc);
+		editsotien=(EditText) findViewById(R.id.editsotienkc);
+		bttthemkc=(Button) findViewById(R.id.btnkhoanchi);
+		spinten=(Spinner) findViewById(R.id.spinnerkc);
+		
+		db=new DataAdapter(this);
+		db.open();
+		
+		spinten.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,strarray));
+		
+		bttdate.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				getDefaultInforkc();
+				showDatePickerDialogkc();
+			}
+		});
+		
+	}
+	public void loadTabs()
+	 {
+	 //Lấy Tabhost id ra trước (cái này của built - in android
+	 final TabHost tab=(TabHost) findViewById(android.R.id.tabhost);
+	 //gọi lệnh setup
+	 tab.setup();
+	 TabHost.TabSpec spec;
+	 //Tạo tab1
+	 spec=tab.newTabSpec("t1");
+	 spec.setContent(R.id.tab1kc);
+	 spec.setIndicator("1-Thêm Khoản Chi");
+	 tab.addTab(spec);
+	 //Tạo tab2
+	 spec=tab.newTabSpec("t2");
+	 spec.setContent(R.id.tab2kc);
+	 spec.setIndicator("2-Danh Sách Khoản Chi");
+	 tab.addTab(spec);
+	 //Thiết lập tab mặc định được chọn ban đầu là tab 0
+	 tab.setCurrentTab(0);
+	 }
+	public void getDefaultInforkc()
+	 {
+	 //lấy ngày hiện tại của hệ thống
+	 cal=Calendar.getInstance();
+	 SimpleDateFormat dft=null;
+	 //Định dạng ngày / tháng /năm
+	 dft=new SimpleDateFormat("dd/MM/yyyy",Locale.getDefault());
+	 String strDate=dft.format(cal.getTime());
+	 //hiển thị lên giao diện
+	 editdate.setText(strDate);	 
+	 //gán cal.getTime() cho ngày hoàn thành và giờ hoàn thành
+	 dateFinish=cal.getTime();
+	 }
+	 public void showDatePickerDialogkc()
+	 {
+	 OnDateSetListener callback=new OnDateSetListener() {
+	 public void onDateSet(DatePicker view, int year,int monthOfYear,int dayOfMonth) {
+	 //Mỗi lần thay đổi ngày tháng năm thì cập nhật lại TextView Date
+		 editdate.setText((dayOfMonth) +"/"+(monthOfYear+1)+"/"+year);
+	 //Lưu vết lại biến ngày hoàn thành
+	 cal.set(year, monthOfYear, dayOfMonth);
+	 dateFinish=cal.getTime();
+	 }
+	 };
+	 //các lệnh dưới này xử lý ngày giờ trong DatePickerDialog
+	 //sẽ giống với trên TextView khi mở nó lên
+	 String s1=editdate.getText()+"";
+	 String strArrtmp1[]=s1.split("/");
+	 int ngayv=Integer.parseInt(strArrtmp1[0]);
+	 int thangv=Integer.parseInt(strArrtmp1[1])-1;
+	 int namv=Integer.parseInt(strArrtmp1[2]);
+	 DatePickerDialog pic1=new DatePickerDialog(KhoanChi_acitive.this,callback, namv, thangv, ngayv);
+	 pic1.setTitle("Chọn ngày hoàn thành");
+	 pic1.show();
+	 }
+
+}

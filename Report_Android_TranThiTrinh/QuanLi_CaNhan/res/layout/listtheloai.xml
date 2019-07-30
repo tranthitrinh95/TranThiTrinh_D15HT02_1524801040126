@@ -1,0 +1,30 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_huongdan"
+    android:orientation="horizontal"
+    android:padding="10dip"  >
+    
+    
+   <ImageView android:id="@+id/phototl" 
+       android:layout_width="80dp" 
+       android:layout_height="80dp" 
+       android:paddingRight="15dp" 
+       android:paddingTop="10dp" /> 
+       
+  <TextView android:id="@+id/nametl"
+       android:textSize="25sp" 
+       android:textStyle="bold" 
+       android:textColor="#FFFF00" 
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:layout_toRightOf="@id/phototl" /> 
+       
+  <TextView android:id="@+id/itemDescriptiontl" 
+      android:layout_width="wrap_content" 
+      android:layout_height="wrap_content" 
+      android:textSize="15sp" 
+       android:textStyle="italic"
+      android:layout_below="@id/nametl"
+      android:layout_toRightOf="@id/phototl" /> 
+</RelativeLayout >

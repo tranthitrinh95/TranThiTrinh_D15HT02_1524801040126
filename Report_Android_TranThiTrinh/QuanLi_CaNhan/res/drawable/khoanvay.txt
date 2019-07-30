@@ -1,0 +1,5 @@
+﻿       Khi màn hình quản lí tài chính hiện lên. Bạn hãy kích vào biểu tượng Khoản Vay lúc đó màn hình sẽ chuyển qua màn hình thêm khoản vay, bạn có thể vào thêm, xóa, sửa một khoản vay.
+       Lúc này bạn hãy nhập vào tên khoản vay mà ai đó đang vay bạn, nhập vào số tiền, lãi suất,nhấn vào nút date sẽ hiện thị list ngày để bạn có thể tùy ý chọn ngày vay và ngày trả của mình.
+      Sau khi đã điền hoàn tất bạn nhấn nút Thêm Khoản Vay nếu như thêm thành công màn hình sẽ báo "Bạn thêm thành công" ngược lại sẽ báo "Bạn thêm không thành công".
+       Sau khi đã thêm thành công bạn hãy kích qua mục Danh Sách Khoản Vay để xem kết quả bạn đã thêm. Nếu bạn muốn Xóa một Khoản Vay thì hãy kích vào một Khoản Vay cần Xóa, lúc đó màn hình sẽ hiện thị lên thông báo "Bạn có muốn Xóa Khoản Vay này không?" nếu bạn chọn "CÓ" thì sẽ xóa khoản vay bạn chọn.
+      Nếu bạn sửa thì cũng kích vào tên khoản vay muốn sửa sẽ hiện lên bản cho bạn sửa, lúc này bạn hãy sửa thông tin khoản vay cần sửa. Sau khi hoàn tất bạn hãy nhấn Update lúc đó khoản vay bạn chon đã sửa thành công.

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="2dip" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="2dip"
+            android:paddingRight="10dip" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dip"
+            android:paddingRight="10dip"
+            android:text="->" />
+
+        <TextView
+            android:id="@+id/txtlaisuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtsotien"
+            android:layout_below="@+id/txtsotien"
+            android:padding="5dip"
+            android:text="444" />
+
+        <TextView
+            android:id="@+id/txtngayvay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtlaisuat"
+            android:layout_below="@+id/txtlaisuat"
+            android:padding="5dip"
+            android:text="5555" />
+
+        <TextView
+            android:id="@+id/txtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtsotien"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dip"
+            android:text="ten" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toLeftOf="@+id/txtten"
+            android:text="Tên khoản vay:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/txtten"
+            android:layout_marginRight="18dp"
+            android:text="Số tiền:" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_below="@+id/txtlaisuat"
+            android:text="Ngày vay:" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView02"
+            android:layout_below="@+id/txtngayvay"
+            android:text="Ngày trả:" />
+
+        <TextView
+            android:id="@+id/txtngaytra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignLeft="@+id/txtngayvay"
+            android:padding="5dip"
+            android:text="777" />
+
+        <TextView
+            android:id="@+id/txtsotien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:padding="5dip"
+            android:text="222" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtlaisuat"
+            android:layout_alignBottom="@+id/txtlaisuat"
+            android:layout_alignLeft="@+id/textView4"
+            android:text="Lãi suất:" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="2dip" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="2dip"
+            android:paddingRight="10dip" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:padding="5dip"
+            android:paddingRight="10dip"
+            android:text="->" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_below="@+id/txtlaisuatkn"
+            android:text="Ngày nợ:" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView02"
+            android:layout_below="@+id/txtngayvaykn"
+            android:text="Ngày trả:" />
+
+        <TextView
+            android:id="@+id/txtten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtngaytrakn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dip"
+            android:text="ten" />
+
+        <TextView
+            android:id="@+id/txtsotienkn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtlaisuatkn"
+            android:layout_below="@+id/txtten"
+            android:padding="5dip"
+            android:text="222" />
+
+        <TextView
+            android:id="@+id/txtlaisuatkn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_toRightOf="@+id/textView2"
+            android:padding="5dip"
+            android:text="444" />
+
+        <TextView
+            android:id="@+id/txtngayvaykn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView02"
+            android:layout_toRightOf="@+id/textView2"
+            android:padding="5dip"
+            android:text="5555" />
+
+        <TextView
+            android:id="@+id/txtngaytrakn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignLeft="@+id/txtngayvaykn"
+            android:padding="5dip"
+            android:text="777" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:text="Lãi suất:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtsotienkn"
+            android:layout_alignBottom="@+id/txtsotienkn"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_marginLeft="19dp"
+            android:text="Số tiền:" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtten"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Tên khoản nợ:" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

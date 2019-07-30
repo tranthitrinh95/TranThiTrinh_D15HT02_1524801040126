@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+D:\Bao Cao Quan Li Tai Chinh\Detaitotnghiep_Quanli\.metadata\.plugins\org.eclipse.jdt.core
+237375889.index
+3059934474.index
+2587846427.index
+3068648579.index

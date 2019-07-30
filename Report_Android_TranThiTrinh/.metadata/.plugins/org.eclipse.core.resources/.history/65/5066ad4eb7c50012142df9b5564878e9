@@ -1,0 +1,70 @@
+package nguyenhuuphu.com;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+import Database.DataAdapter;
+import android.app.Activity;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class Timkiem_KhoanVay extends Activity{
+	 private ListView lv;
+	 Button button;
+	 EditText editkv;
+	 private DataAdapter db;
+	    private ArrayAdapter<String> adapter;
+	    private EditText inputSearch;
+	    private ArrayList<HashMap<String, String>> productList;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.list_itemkv);
+		db=new DataAdapter(this);
+		 db.open();
+		 db.getAllkv();
+
+	/*	 if(db.databaseCreated()){
+	            dbAdapter.insertRow("test", "test example", "example_test@example.com");
+	            dbAdapter.insertRow("lorem", "lorem ipsum", "lorem.ipsum@example2.com");
+	            dbAdapter.insertRow("jdoe", "Jonh Doe", "j.doe@example.com");
+	        }*/
+	        
+	        Button button = (Button) findViewById(R.id.btnSearch);
+	        final EditText etSearch = (EditText) findViewById(R.id.etSearch);
+	       lv = (ListView) findViewById(R.id.listResults);
+	        
+	             
+	      /*  button.setOnClickListener(new View.OnClickListener() {
+	            public void onClick(View v) {
+	                LinkedList<String> results = db.search(etSearch.getText().toString());
+	                
+	                if(results.isEmpty()){
+	                    tvResults.setText("No results found");
+	                }else{
+	                    Iterator<String> i = results.iterator();
+	                    tvResults.setText("");
+	                    while(i.hasNext()){
+	                        tvResults.setText(tvResults.getText()+i.next()+"\n");
+	                    }
+	                }
+	            }
+	        });*/
+	    }
+	    @Override
+	    protected void onDestroy() {
+	        db.close();
+	        super.onDestroy();
+	    }
+
+}

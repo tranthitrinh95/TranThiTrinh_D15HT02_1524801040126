@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+ android:id="@+id/textView1"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:background="#008000"
+ android:gravity="center"
+ android:text="Màn hình Khoản Nợ"
+ android:textSize="25dp"
+ android:textStyle="italic"
+ android:textColor="#FFFFFF" />
+ 
+<TableLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:stretchColumns="*">
+ 
+
+<TextView
+ android:id="@+id/textView2"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_margin="10dp"
+ android:text="Tên Khoản nợ:" />
+
+<EditText
+    android:id="@+id/editcongvieckn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_span="2"
+    android:ems="10" />
+ 
+<TableRow
+ android:id="@+id/tableRow2"
+ android:layout_margin="10dp"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content" >
+ 
+<TextView
+ android:id="@+id/textView4"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Số Tiền:" />
+
+<EditText
+ android:id="@+id/editsotienkn"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_span="2"
+ android:ems="10" />
+ 
+<TextView
+ android:id="@+id/txtvn"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="VND"
+ android:textColor="#FF0000" />
+ 
+<requestFocus />
+ 
+</TableRow>
+<TableRow
+ android:id="@+id/tablalaisuatkn"
+ android:layout_margin="10dp"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content" >
+ 
+<TextView
+ android:id="@+id/txtlaisuat"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Lãi Suất:" />
+<EditText
+ android:id="@+id/editlaisuatkn"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_span="2"
+ android:ems="10" />
+ 
+<TextView
+ android:id="@+id/txtlai"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="%"
+ android:textColor="#FF0000" />
+ 
+<requestFocus />
+ 
+</TableRow>
+ 
+<TableRow
+ android:id="@+id/tableRow3"
+ android:layout_margin="10dp"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content" >
+ 
+<TextView
+ android:id="@+id/textView4"
+ android:layout_width="wrap_content"
+ android:textSize="15dp"
+ android:layout_height="wrap_content"
+ android:text="Ngày nợ:" />
+ 
+<EditText
+ android:id="@+id/txtdatekn"
+ android:layout_width="170dp"
+ android:textSize="15dp"
+ android:inputType="date"
+ android:layout_height="wrap_content"
+ android:text="1/3/2013"
+ android:textColor="#FF0000" />
+
+<Button
+    android:id="@+id/btnno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date" />
+ 
+</TableRow>
+ 
+<TableRow
+ android:id="@+id/tableRowtr"
+ android:layout_margin="10dp"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content" >
+ 
+<TextView
+ android:id="@+id/textViewtr"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Ngày trả nợ:" />
+ 
+<EditText
+ android:id="@+id/txttrakn"
+ android:layout_width="170dp"
+ android:layout_height="wrap_content"
+ android:inputType="date"
+ android:text="1/3/2013"
+ android:textColor="#FF0000" />
+
+<Button
+    android:id="@+id/btntrakn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date" />
+ 
+</TableRow>
+ </TableLayout>
+ 
+<TextView
+ android:id="@+id/textView9"
+ android:layout_width="match_parent"
+ android:layout_height="2dp"
+ android:background="#E1E1E1" />
+
+<Button
+    android:id="@+id/btnthemkn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginRight="20dp"
+    android:text="Thêm KN" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

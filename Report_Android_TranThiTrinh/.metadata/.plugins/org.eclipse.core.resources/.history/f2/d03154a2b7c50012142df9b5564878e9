@@ -1,0 +1,62 @@
+package nguyenhuuphu.com;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+import Database.DataAdapter;
+import android.app.Activity;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
+
+public class Timkiem_KhoanVay extends Activity{
+	 private ListView lv;
+	 Button button;
+	 EditText editkv;
+	 private DataAdapter db;
+	    private ArrayAdapter<String> adapter;
+	    private EditText inputSearch;
+	    private ArrayList<HashMap<String, String>> productList;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.list_itemkv);
+		db=new DataAdapter(this);
+		 db.open();
+		 db.getAllkv();
+		 
+	        button = (Button) findViewById(R.id.btnSearch);
+	        editkv = (EditText) findViewById(R.id.etSearch);
+	       lv = (ListView) findViewById(R.id.listResults);
+	        
+	    }
+	private void disAllKC() {
+		db.open();
+		try {
+			Cursor curn = db.getAllkc();
+			startManagingCursor(curn);
+
+			String[] from = new String[] { DataAdapter.mathloaichi, DataAdapter.colsotienkc, DataAdapter.colngaychi };
+			int[] to = new int[] { R.id.aaaa, R.id.txtsotienkc, R.id.txtngaytrakc };
+
+			SimpleCursorAdapter cursordata = new SimpleCursorAdapter(this, R.layout.row_khoanchi, curn, from, to);
+			lv.setAdapter(cursordata);
+		}
+	}
+	    @Override
+	    protected void onDestroy() {
+	        db.close();
+	        super.onDestroy();
+	    }
+
+}
